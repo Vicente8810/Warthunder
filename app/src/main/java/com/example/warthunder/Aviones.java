@@ -10,11 +10,11 @@ public class Aviones {
 
     private int AñoFabricacion;
 
-    private int Url_imagen;
+    private String Url_imagen;
 
     public Aviones(){}
 
-    public Aviones(int id, int motores, int velocidadMaxima, int alturaMaxima, int añoFabricacion, int url_imagen) {
+    public Aviones(int id, int motores, int velocidadMaxima, int alturaMaxima, int añoFabricacion, String url_imagen) {
 
         Id = id;
         Motores = motores;
@@ -64,11 +64,24 @@ public class Aviones {
         AñoFabricacion = añoFabricacion;
     }
 
-    public int getUrl_imagen() {
+    public String getUrl_imagen() {
         return Url_imagen;
     }
 
-    public void setUrl_imagen(int url_imagen) {
+    public void setUrl_imagen(String url_imagen) {
         Url_imagen = url_imagen;
     }
+
+    @Override
+    public String toString() {
+        return "Aviones{" +
+                "Id=" + Id +
+                ", Motores=" + Motores +
+                ", VelocidadMaxima=" + VelocidadMaxima +
+                ", AlturaMaxima=" + AlturaMaxima +
+                ", AñoFabricacion=" + AñoFabricacion +
+                ", Url_imagen=" + Url_imagen +
+                '}';
+    }
+
 }
